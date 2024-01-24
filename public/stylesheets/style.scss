@@ -27,12 +27,14 @@ header{
 
 #home{ /* トップ背景 */
   background-image: url("/images/bg-1.jpg");
+  background-color: black;
+  background-blend-mode: hard-light;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }/* トップ背景 */
 
-.top-bg{/* 背景詳細設定 */
+.big-bg{/* 背景詳細設定 */
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
@@ -40,13 +42,15 @@ header{
 
 .top-content{/* トップ中央の文字 */
   text-align: center;
-  color: aqua;
+  color: #0bd;
   align-self: center;
   margin-top: auto;
   margin-bottom: auto;
+  filter: brightness(1.5); 
+
   .top-message{
     font-size: 5rem;
-    font-family: impact, Helvetica, sans-serif;
+    font-family:  "Times New Roman","Palatino Linotype", sans-serif;
     text-transform: uppercase;
     font-weight: normal;
   }
@@ -55,14 +59,33 @@ header{
     font-size: 1.5rem;
     margin: 10px 0 42px;
     font-family: impact, Helvetica, sans-serif;
+
+    .emphasis{
+      font-weight: bold;
+    }
   }
 
   .btn{
     padding: 1.5rem 2rem;
     border-width: 2px;
+
     &:hover{
       color: #fff;
     }
   }
   
 }/* トップ中央の文字 */
+
+#menu{ //
+  background-image: url("/images/banner-1.jpg");
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  >h2{
+    align-self: center;
+    text-transform: uppercase;
+    font-family:  "Times New Roman","Palatino Linotype", sans-serif;
+    margin-top: 20px;
+    font-size: 3rem;
+  }
+}

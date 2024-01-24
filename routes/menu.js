@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', (req, res, next) => {
-  res.render('menu', { title: '【公式】GENIE' });
+  res.render('menu');
 });
 
 module.exports = router;
