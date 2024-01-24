@@ -1,0 +1,60 @@
+
+/* ヘッダー */
+header{
+  padding: 1%;
+  display: flex;
+  justify-content: space-between;
+
+  /* Custom CSS for changing hover color */
+  .nav-underline .nav-item:hover .nav-link {
+    border-bottom: 2px solid white; /* Change this to the desired color */
+    color: white;
+  }
+
+  .nav-link{
+    color: aqua;
+    font-size: larger;
+  }
+
+  #logo{
+    font-family:  'Cursive', 'Script', cursive;
+    color: aqua;
+    text-align: center;
+    align-self: center;
+    text-decoration: none;
+  }
+}/* ヘッダー */
+
+#home{ /* トップ背景 */
+  background-image: url("/images/bg-1.jpg");
+  min-height: 100vh;
+}/* トップ背景 */
+
+.top-bg{/* 背景詳細設定 */
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}/* 背景詳細設定 */
+
+.top-content{/* トップ中央の文字 */
+  text-align: center;
+  margin-top: 10%;
+  color: aqua;
+
+  .top-message{
+    font-size: 5rem;
+    font-family: impact, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: normal;
+  }
+
+  .sub-message{
+    font-size: 1.5rem;
+    margin: 10px 0 42px;
+    font-family: impact, Helvetica, sans-serif;
+  }
+
+  .btn:hover{
+    color: #fff;
+  }
+}/* トップ中央の文字 */
