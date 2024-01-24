@@ -77,8 +77,8 @@ header{
 }/* トップ中央の文字 */
 
 #menu{ //
-  background-image: url("/images/banner-1.jpg");
-  height: 200px;
+  background-image: url("/images/menu-2.jpg");
+  //height: 200px;
   display: flex;
   flex-direction: column;
   >h2{
@@ -87,5 +87,23 @@ header{
     font-family:  "Times New Roman","Palatino Linotype", sans-serif;
     margin-top: 20px;
     font-size: 3rem;
+    color: aqua;
+  }
+}
+
+.menu-body{
+  .menu-card{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    color: aquamarine;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    .menu-name{
+      border-bottom: black solid 5px ;
+    }
+    .menu-explain{
+      margin-bottom: 30px;
+    }
   }
 }
