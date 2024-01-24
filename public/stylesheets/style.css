@@ -26,6 +26,8 @@ header #logo {
 #home { /* トップ背景 */
   background-image: url("/images/bg-1.jpg");
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 } /* トップ背景 */
 .top-bg { /* 背景詳細設定 */
   background-size: cover;
@@ -34,8 +36,10 @@ header #logo {
 } /* 背景詳細設定 */
 .top-content { /* トップ中央の文字 */
   text-align: center;
-  margin-top: 10%;
   color: aqua;
+  align-self: center;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 .top-content .top-message {
   font-size: 5rem;
@@ -47,6 +51,10 @@ header #logo {
   font-size: 1.5rem;
   margin: 10px 0 42px;
   font-family: impact, Helvetica, sans-serif;
+}
+.top-content .btn {
+  padding: 1.5rem 2rem;
+  border-width: 2px;
 }
 .top-content .btn:hover {
   color: #fff;
