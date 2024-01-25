@@ -19,7 +19,14 @@
       </div><!--トップコンテンツ-->
     </div><!--背景画像-->
     
-
+    <script>
+      // ページが読み込まれた時にフェイドインさせる
+      window.onload = function() {
+        const topMessage = document.querySelector('.top-message');
+        topMessage.classList.add('fade-in');
+      };
+    </script>
+    
 
 
 

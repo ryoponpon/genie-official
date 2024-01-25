@@ -1,3 +1,32 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px); /* 上からスライドさせる */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* 元の位置に戻す */
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+    color: red;
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.05);
+    color: red;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    color: red;
+  }
+}
+
 
 /* ヘッダー */
 header{
@@ -53,6 +82,7 @@ header{
     font-family:  "Times New Roman","Palatino Linotype", sans-serif;
     text-transform: uppercase;
     font-weight: normal;
+    animation: fadeIn 3s ease-out forwards;
   }
 
   .sub-message{
@@ -61,7 +91,9 @@ header{
     font-family: impact, Helvetica, sans-serif;
 
     .emphasis{
+      display: inline-block;
       font-weight: bold;
+      animation: blink 2s infinite;
     }
   }
 
