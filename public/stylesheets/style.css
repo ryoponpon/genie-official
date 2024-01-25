@@ -81,17 +81,15 @@ header #logo {
   color: aqua;
 }
 
-.menu-body .menu-card {
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-  color: aquamarine;
-  padding-top: 30px;
-  padding-bottom: 40px;
+.menu-card {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: grid;
+  gap: 60px;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, 1fr);
 }
-.menu-body .menu-card .menu-name {
-  border-bottom: black solid 5px;
-}
-.menu-body .menu-card .menu-explain {
-  margin-bottom: 30px;
+.menu-card .card {
+  height: 100%;
 }/*# sourceMappingURL=style.css.map */
