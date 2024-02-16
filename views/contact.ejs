@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>【公式】GENIE</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+  <body class="menu-body">
+    <div id="contact" class="big-bg"><!-- 背景画像 -->
+
+      <!-- ヘッダー -->
+      <%- include('header.ejs') %>
+      <!-- ヘッダー -->
+      
+      <h2>CONTACT</h2>
+
+      <div class="container contact-form">
+        <div class="row">
+          <label for="exampleFormControlInput1" class="form-label">お名前</label>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="性" aria-label="First name">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="名" aria-label="Last name">
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">メールアドレス</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">お問い合わせ内容</label>
+          <textarea class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+
+        <div class="d-grid gap-2 col-6 mx-auto">
+          <input class="btn btn-primary" type="submit" value="Submit">
+        </div>
+        
+
+      </div>
+
+      
+
+
+    </div><!--背景画像-->
+    
+
+
+
+
+  <!--Bootstrap CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -137,3 +137,26 @@ header{
     height: 100%;
   }
 }
+
+#contact{
+  background-image: url('/images/contact.jpg');
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  >h2{
+    align-self: center;
+    text-transform: uppercase;
+    font-family:  "Times New Roman","Palatino Linotype", sans-serif;
+    margin-top: 20px;
+    font-size: 3rem;
+    color: gray;
+  }
+}
+
+.contact-form{
+  .row{
+    margin-bottom: 10px;
+  }
+ 
+}
+
